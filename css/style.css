@@ -1,29 +1,11 @@
-h2{
-  display: flex;
-  height: 50px;
-  justify-content: center;
-}
-nav {
-  background-color: gray;
-  position: fixed;
-  width: 100%;
-  top: 0;
-}
 
 section {
   width: 100%;
-  height: 100vh;
-}
-li {
-  float: left;
+  height: 150vh;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 15px 15px;
-  text-decoration: none;
+li {
+  float: left;
 }
 
 #main {
@@ -31,6 +13,8 @@ li a {
 }
 
 #welcome-section {
+  width: 100%;
+  height: 100vh;
   background-color: green;
 }
 #projects {
@@ -39,11 +23,20 @@ li a {
 #about-me {
   background-color: orange;
 }
-.ul-style {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+
+.card{
+  width: 50%;
+  height: auto;
+  margin: 0 auto; 
+  float: none; 
+  margin-bottom: 10px; 
+}
+
+.h2-style{
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .welcome-text {
@@ -54,20 +47,13 @@ li a {
   align-items:center;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-}
-.container{
-   padding: 2px 16px;
-}
 @media screen and (max-width: 460px) {
-  nav {
-    background-color: yellow;
-    position: absolute;
-    
+ 
+  section {
+    height: 300vh;
   }
   .project-tile {
     flex-direction: column;
   }
+  
 }

@@ -17,14 +17,18 @@
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
 <div id="main">
-  <nav id="navbar">
-    <ul class="ul-style">
-      <li><a href="#welcome-section">Welcome Section</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about-me">About Me</a></li>
-    </ul>
+  <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="#welcome-section">Welcome Section</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about-me">About Me</a></li>
+      </ul>
+    </div>
   </nav>
   <section id="welcome-section">
     <div class="welcome-text">
@@ -33,50 +37,52 @@
     </div>
   </section>
   <section id="projects">
+     <div class="h2-style">
     <h2>Projects</h2>
-      
+    </div>
     <div class="project-tile">
       <div class="row">
         <div class="col-md-4">
-          <div class="thumbnail">
+          <div class="card">
             <a href="#">
         <img src="https://images.unsplash.com/photo-1529392960549-df4af50eac23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Lights" style="width:100%">
-        <div class="caption">
-          <p>Lorem ipsum...</p>
+        <div class="card-body">
+          <h5 class="card-title">Product Page (FCC)</h5>
         </div>
       </a>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="thumbnail">
+          <div class="card">
             <a href="#">
-        <img src="https://images.unsplash.com/photo-1529392960549-df4af50eac23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Nature" style="width:100%">
-        <div class="caption">
-          <p>Lorem ipsum...</p>
+        <img src="https://images.unsplash.com/photo-1529392960549-df4af50eac23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Lights" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">Survey Page (FCC)</h5>
         </div>
       </a>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="thumbnail">
+          <div class="card">
             <a href="#">
-        <img src="https://images.unsplash.com/photo-1529392960549-df4af50eac23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Nature" style="width:100%">
-        <div class="caption">
-          <p>Lorem ipsum...</p>
+        <img src="https://images.unsplash.com/photo-1529392960549-df4af50eac23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Lights" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">Tribute Page(FCC)</h5>
         </div>
       </a>
           </div>
         </div>
       </div>
-
     </div>
-  </section>
-  <section id="about-me">
-    <h2>About Me</h2>
-    <div>
-      <a id="profile-link" href="https://github.com/kaiorosa1" target="_blank">GitHub Page</a>
-    </div>
-  </section>
+</section>
+<section id="about-me">
+  <div class="h2-style">
+  <h2>About Me</h2>
+  </div>
+  <div>
+    <a id="profile-link" href="https://github.com/kaiorosa1" target="_blank">GitHub Page</a>
+  </div>
+</section>
 </div>
 
 <!-- Optional JavaScript -->
